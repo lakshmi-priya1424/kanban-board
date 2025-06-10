@@ -1,0 +1,172 @@
+body{
+    background:url(https://static.vecteezy.com/system/resources/previews/026/284/954/non_2x/simple-illustration-aesthetic-pastel-flat-brwon-color-background-modern-organic-shape-style-good-for-banner-wallpaper-cover-social-media-post-free-vector.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.board{
+    display: flex;
+    gap:20px;
+    padding:20px;
+}
+
+.column{
+    flex:1;
+    background: #f4f4f4f4;
+    border-radius: 10px;
+     padding: 10px;
+     min-height:300px;
+     box-shadow: 0 0 7px rgba(0,0,0,0.2);
+}
+
+.column h2{
+    text-align:center;
+    color:black;
+    background-color: white;
+    border-radius: 10px;
+    padding:5px;
+}
+.column-red{
+    background-color: #88dcd1;
+    border-left: 8px solid #0d7063;
+}
+.column-yellow{
+    background-color: #fad39f;
+    border-left: 8px solid #fb7b0a;
+
+}
+.column-green{
+    background-color: #9aef87;
+    border-left: 8px solid #33cc66;
+
+}
+
+.card{
+    background-color: white;
+    margin: 10px 0;
+    padding:10px;
+    border-radius: 6px;
+    box-shadow: 0  1px 3px rgba(0,0,0,0.2);
+    cursor: grab;
+    transition: transform 0.2s ease;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  width:60%;
+  margin-bottom: 20px;
+  margin-left:200px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #e3d6f9;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+  background: #f9f7fd;
+  box-shadow: 0 1px 10px rgba(36, 130, 238, 0.667);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-form input:focus {
+  border-color: #32057a;
+  box-shadow: 0 0 20px rgba(70, 188, 247, 0.813);
+}
+
+.task-form button {
+  padding: 10px 20px;
+  background:linear-gradient(to bottom ,rgb(142, 142, 194),rgb(85, 135, 222));;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  border-radius: 30px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.task-form button:hover {
+  background-color: #003f9f;
+  transform: translateY(-2px);
+}
+
+.trash-drop-zone{
+    color:white;
+    margin:2px auto;
+    padding: 10px 24px;
+    border:2px dashed;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: fit-content;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.461);
+    transition: backgroud-color 1s;
+}
+
+.trash-drop-zone:hover{
+    background-color: rgb(44, 42, 42);
+    cursor: pointer;
+}
+
+.modal-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.modal{
+    background: white;
+    padding:24px 32px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-buttons{
+    margin-top : 20px;
+    display: flex;
+    justify-content: center;
+    gap:16px;
+}
+
+.delete-btn{
+    background-color: #ff4d4d;
+    border:none;
+     color:white;
+     padding:10px 16px;
+     border-radius: 6px;
+     cursor: pointer;
+}
+.cancel-btn{
+    background-color: #68a1e6;
+    border:none;
+     color:white;
+     padding:10px 16px;
+     border-radius: 6px;
+     cursor: pointer;
+}
+.card input.edit-input{
+    font-size: 1rem;
+    padding: 4px;
+    outline:none;
+    border:none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.card.drop-indicator{
+    border-top: 3px dashed blue;
+    transition: border 0.2s ease;
+}
