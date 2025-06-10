@@ -1,5 +1,5 @@
 import { createContext, useEffect, useMemo, useReducer, useRef, useContext, useState } from 'react';
-import './kanbanboard.css';
+import './KanbanBoard.css';
 
 const KanbanContext = createContext();
 
